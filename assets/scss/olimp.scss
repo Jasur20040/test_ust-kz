@@ -1,0 +1,666 @@
+.olimp {
+    padding-top: 50px;
+    background: url(~assets/images/olimp/main_bg.webp) no-repeat 50% 0%/contain, linear-gradient(140.25deg, #DBF4FF 0.93%, #F3E7FF 82.61%) 50% 50% / cover;
+
+    &.baiqau {
+        background: linear-gradient(140.25deg, #DBF4FF 0.93%, #F3E7FF 82.61%) 50% 50% / cover !important;
+
+        .pd {
+            color: #172856;
+        }
+    }
+
+    .pd {
+        color: #fff;
+        padding: 0 35px;
+
+        .wrap {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23.48px;
+            flex-wrap: wrap;
+        }
+
+        .cstBtn {
+            border: 1px solid #1E63E9;
+            margin-top: 20px;
+            padding: 15px 30px;
+        }
+    }
+
+    .headtitle {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 52.2px;
+        text-transform: uppercase;
+
+        span {
+            color: #FF8B0D;
+        }
+    }
+
+    .timer {
+        margin-top: 20px;
+
+        .time {
+            width: 130px;
+            padding: 15px;
+            box-shadow: -8px -8px 16px 0px #092C70 inset, 8px 8px 15px 0px #09173399;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.56px;
+            background: #172856;
+            border-radius: 20px;
+
+            .name {
+                font-size: 26px;
+                font-weight: 600;
+                line-height: 37.7px;
+            }
+        }
+    }
+
+    .buttons {
+        margin-top: 50px;
+        padding-left: 45px;
+        gap: 60px;
+        overflow-x: auto;
+        box-shadow: 0px 3px 6px 0px #0000001A;
+        background: #F5F6F8;
+        border-radius: 10px 10px 0px 0px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .btn {
+            padding: 30px 0;
+            font-size: 24px;
+            line-height: 34.18px;
+            color: #858A97;
+            border-radius: 0;
+
+            &.active {
+                color: #363636;
+                padding: 30px 0 26px;
+                border-bottom: 4px solid #363636;
+            }
+        }
+    }
+
+    .turnirs {
+        border-radius: 0 0 10px 10px;
+        background: #FFFFFF;
+        padding: 20px 65px 40px;
+        box-shadow: 0px 5px 10px 0px #0000000D;
+
+
+        .list {
+            background: #E2E8F4;
+            gap: 1px;
+
+            &.baiqau {
+                background: #fff;
+                gap: 20px;
+
+                .block {
+                    border: 1px solid rgba(226, 232, 244, 1);
+                    border-radius: 10px;
+                    padding: 20px;
+                    transition: 0.15s all ease;
+
+                    .title {
+                        font-size: 18px;
+                        line-height: 25.63px;
+                        color: #1E63E9;
+                    }
+
+                    .info {
+                        font-size: 14px;
+                        line-height: 19.74px;
+
+                        span {
+                            color: #858A97;
+                        }
+
+                    }
+
+                    .socket {
+                        min-width: 40px;
+                        height: 40px;
+                        outline: 1px solid #AABDE1;
+                        outline-offset: -1px;
+                        border-radius: 50%;
+                        transition: 0.15s all ease;
+
+                        svg {
+                            stroke: #AABDE1;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid #0045CB;
+                        box-shadow: 0px 10px 30px 0px #00000026;
+
+                        .socket {
+                            background: #0045CB;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .item {
+            padding: 20px 0;
+            font-size: 18px;
+            line-height: 25.38px;
+            color: #363636;
+            background: #fff;
+
+            svg {
+                stroke: #363636;
+                min-width: 24px;
+                height: 24px;
+            }
+
+            &:hover {
+                color: #0045CB;
+
+                svg {
+                    stroke: #0045CB;
+                }
+            }
+        }
+    }
+
+    .landing {
+        padding-top: 50px;
+        padding-bottom: 80px;
+
+        .mt-100 {
+            margin-top: 100px;
+        }
+
+        .h2 {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 47px;
+        }
+
+        .video_block {
+            .wrap {
+                margin-top: 30px;
+                align-items: center;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25.38px;
+
+
+                .glassBtn {
+                    margin-top: 20px;
+                    padding: 20px 40px;
+                    background: transparent;
+                    color: #1E63E9;
+                    border: 1px solid #1E63E9;
+
+                    svg {
+                        stroke: #1E63E9;
+                    }
+                }
+
+                li {
+                    margin-top: 20px;
+                }
+
+
+
+                .video {
+                    &:hover {
+                        cursor: pointer;
+                        outline: 1px solid #1E63E9;
+                    }
+
+                    max-width: 312px;
+                    height: 302px;
+                    background: url(~assets/images/olimp/videoBg.webp) 50% 50% / cover;
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 25.38px;
+                    text-align: center;
+
+                    width: 100%;
+                }
+
+            }
+        }
+
+        .present_plus_block {
+            color: #363636;
+
+            .cstbtn {
+                height: 70px;
+                max-width: 670px;
+                margin: 100px auto 0;
+
+            }
+
+            .wrap {
+                margin-top: 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas:
+                    "a b c"
+                    "d e f";
+
+                .block {
+                    padding: 40px 17px 38px;
+
+
+                    &.bg {
+                        background: linear-gradient(140.25deg, #C8EFFF 0.93%, #ECDAFF 82.61%);
+                    }
+
+
+                    img {
+                        margin-top: 15px;
+                    }
+
+                    .title {
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 23px;
+                    }
+
+                    .desc {
+                        color: #000000;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 19px;
+                        margin-top: 15px;
+                    }
+                }
+
+                .a {
+                    grid-area: a;
+                }
+
+                .b {
+                    grid-area: b;
+                }
+
+                .c {
+                    grid-area: c;
+                }
+
+                .d {
+                    grid-area: d;
+                }
+
+                .e {
+                    grid-area: e;
+                }
+
+                .f {
+                    grid-area: f;
+                }
+            }
+        }
+
+
+    }
+
+    .subject {
+        display: block;
+        margin: 0 auto;
+        max-width: 670px;
+    }
+
+    .bigBtn {
+        height: 70px;
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 1439px) {
+    .olimp .buttons {
+        gap: 45px;
+    }
+
+    .olimp .headtitle {
+        font-size: 31px;
+        line-height: 47.2px;
+    }
+
+    .olimp .timer .time {
+        width: 97px;
+    }
+
+    .olimp .pd .wrap {
+        gap: 20px;
+    }
+
+    .olimp {
+        background-size: 1439px 428px, cover;
+    }
+
+}
+
+@media all and (max-width: 1199px) {
+    .olimp .headtitle {
+        font-size: 30px;
+        line-height: 38.2px;
+    }
+
+    .olimp .timer .time {
+        width: 109px;
+    }
+
+    .olimp {
+        background-size: 1617px 502px, cover;
+    }
+
+    .olimp .landing .h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .olimp .landing .video_block .wrap .video {
+        height: 251px;
+    }
+
+    .olimp .landing .video_block .wrap li {
+        margin-top: 15px;
+    }
+
+    .olimp .landing .video_block .wrap .glassBtn {
+        padding: 20px;
+    }
+
+
+
+}
+
+@media all and (max-width: 991px) {
+
+    .olimp .timer .time {
+        width: 75px;
+        font-size: 14px;
+        line-height: 18.56px;
+    }
+
+    .olimp .timer .time .name {
+        font-size: 24px;
+        line-height: 31.7px;
+    }
+
+    .olimp .pd {
+        padding: 0 25px;
+    }
+
+    .olimp {
+        background-size: 1635px 455px, cover;
+    }
+
+
+    .olimp .buttons {
+        margin-top: 40px;
+        padding-left: 35px;
+    }
+
+    .olimp .turnirs {
+        padding: 20px 35px 40px;
+    }
+
+    .olimp .buttons .btn {
+        padding: 25px 0;
+        font-size: 21px;
+        line-height: 30.18px;
+
+        &.active {
+            padding: 25px 0 21px;
+        }
+    }
+
+    .olimp .turnirs .list.baiqau {
+        grid-template-columns: 1fr;
+    }
+
+
+    .olimp .landing .video_block .wrap {
+        flex-direction: column-reverse;
+        gap: 15px;
+
+        .video {
+            width: 312px;
+            height: 302px;
+
+        }
+    }
+
+    .olimp .landing .h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .olimp .landing .present_plus_block .wrap {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "a b"
+            "d c"
+            "e f";
+
+        .olimp .landing .present_plus_block .cstbtn {
+            margin: 80px auto 0;
+        }
+    }
+
+    .olimp .landing .present_plus_block .wrap .block {
+        .title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .desc {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+
+
+}
+
+@media all and (max-width: 767px) {
+    .olimp {
+        background-size: 1440px 410px, cover;
+        background-position: 96% 0%;
+    }
+
+    .olimp .landing .video_block .wrap .video {
+        width: 100%;
+        max-width: none;
+        height: 521px;
+    }
+
+    .olimp .landing .mt-100 {
+        margin-top: 80px;
+    }
+
+    .olimp .landing .present_plus_block .wrap {
+        margin-top: 30px;
+    }
+
+    .tc {
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 575px) {
+    .pdd {
+        padding: 0 21.5px;
+    }
+
+    .olimp .landing .video_block .wrap .video {
+        height: calc(100vw - 61px);
+    }
+
+    ol {
+        padding-inline-start: 21.5px;
+    }
+
+    .cst-ct {
+        padding: 0;
+    }
+
+    .content {
+        width: calc(100vw);
+    }
+
+    .olimp .headtitle {
+        font-size: 26px;
+        line-height: 32.2px;
+    }
+
+    .olimp .timer .time {
+        width: 90px;
+    }
+
+    .olimp .buttons {
+        margin-top: 50px;
+    }
+
+    .olimp .landing .h2 {
+        font-size: 27px;
+        line-height: 32px;
+    }
+
+    .olimp.baiqau .turnirs {
+        padding: 30px 20px 40px;
+    }
+
+    .olimp .landing .video_block .wrap {
+        font-size: 15px;
+        line-height: 21.38px;
+        gap: 10px;
+
+        li,
+        ol {
+            margin-top: 10px;
+        }
+
+        .glassBtn {
+            width: 100%;
+        }
+    }
+
+
+}
+
+@media all and (max-width: 445px) {
+
+    .olimp .buttons {
+        margin-top: 30px;
+        padding-left: 25px;
+        gap: 30px;
+    }
+
+    .olimp .turnirs {
+        padding: 10px 25px 30px;
+    }
+
+    .olimp.baiqau .turnirs {
+        padding: 30px 10px 40px;
+    }
+
+    .olimp .turnirs .list.baiqau .block .title {
+        font-size: 16px;
+        line-height: 23.63px;
+    }
+
+    .olimp .turnirs .list.baiqau .block .socket {
+        min-width: 26px;
+        height: 26px;
+
+        svg {
+            width: 11px;
+            height: 11px;
+        }
+    }
+
+    .olimp .turnirs .list.baiqau .block .info {
+        font-size: 12px;
+        line-height: 17.74px;
+    }
+
+    .olimp .buttons .btn {
+        padding: 20px 0;
+        font-size: 18px;
+        line-height: 21.18px;
+
+        &.active {
+            padding: 20px 0 18px;
+        }
+    }
+
+    .olimp .turnirs .item {
+        font-size: 16px;
+        line-height: 22.38px;
+    }
+
+    .olimp .headtitle {
+        font-size: 22px;
+        line-height: 28.2px;
+    }
+
+    .olimp {
+        padding-top: 30px;
+    }
+
+    .olimp .pd {
+        padding: 0 20px;
+    }
+
+    .olimp .timer .time .name {
+        font-size: 20px;
+        line-height: 24.7px;
+    }
+
+    .olimp .timer .time {
+        width: 75px;
+        font-size: 12px;
+        line-height: 16.56px;
+    }
+
+    .olimp .pd .wrap {
+        gap: 10px;
+    }
+
+    .olimp .buttons {
+        margin-top: 60px;
+    }
+
+    .olimp .landing .h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .olimp .landing .present_plus_block .wrap .block .title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .olimp .landing .present_plus_block .wrap .block .desc {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+
+
+
+}

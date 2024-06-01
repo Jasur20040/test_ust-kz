@@ -1,0 +1,143 @@
+.bgwhite {
+    background: #F8F8F8;
+}
+
+.main {
+    .informer {
+        margin-top: 20px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 54px auto;
+        align-items: center;
+        gap: 10px;
+        background: #E6F7E8;
+        border-radius: 6px;
+        color: #03B113;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    .h {
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+
+        margin-top: 50px;
+    }
+
+    .vkladki {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 270px 270px;
+        gap: 10px;
+        max-width: 100%;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .vkladka {
+            width: auto;
+            height: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16px;
+            border-radius: 6px 6px 0px 0px;
+
+            &.active {
+                background: #F8F8F8;
+            }
+        }
+    }
+}
+
+
+
+
+@media all and (max-width: 883px) {
+    .main .informer {
+        grid-template-columns: 54px auto;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .list .block_list .block .head {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .list .block_list .block .body {
+        margin-top: 20px;
+    }
+
+    .main .vkladki {
+        grid-template-columns: 270px 210px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .main .informer {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .list .block_list .block .head {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .list .block_list .block .body {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .list .block_list {
+        padding-top: 40px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .main .informer {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .list .block_list .block .head {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+@media all and (max-width: 474px) {
+    .list .block_list .block .head {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .main .informer {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .list .block_list .block .body {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media all and (max-width: 410px) {
+    .main .vkladki {
+        grid-template-columns: 270px 165px;
+    }
+}
+
+@media all and (max-width: 385px) {
+    .list .block_list .block .head {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}

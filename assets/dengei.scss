@@ -1,0 +1,382 @@
+.content {
+    margin-top: 10px;
+}
+.cst-size-btn {
+    width: 100%;
+    height: 50px;
+}
+.dengei_block {
+    padding: 20px 35px;
+    margin-top: 20px;
+
+    .title {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40.29px;
+    }
+
+    .turnir_info {
+        margin-top: 20px;
+        background: linear-gradient(123.89deg, rgba(30, 99, 233, 0.2) 28.86%, rgba(30, 99, 233, 0.3) 59.13%);
+        padding: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+
+        .backgroundText {
+            position: absolute;
+            font-size: 209px;
+            line-height: 130px;
+            font-weight: 800;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+            opacity: 0.2;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+
+        .name {
+            color: #858A97;
+        }
+
+        .value {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 18px;
+        }
+    }
+
+    .turnir {
+        margin-top: 30px;
+
+        .item {
+            gap: 15px;
+
+            .name {
+                color: #858A97;
+            }
+
+            .value {
+                font-size: 16px;
+                line-height: 22.56px;
+
+                &.green {
+                    color: #03B113;
+                }
+            }
+        }
+
+        .icon {
+            background: #6BE91E;
+            box-shadow: -1px 1px 10px 0px #00000014;
+            background: radial-gradient(63.11% 63.11% at 31.97% 19.67%, rgba(255, 255, 255, 0.6), #6BE91E) #6BE91E;
+            border-radius: 10px;
+            min-width: 44px;
+            height: 44px;
+
+            img {
+                min-width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+.qatysushy {
+    border-radius: 10px;
+    background: #F5F6F8;
+    padding: 30px 65px 50px;
+
+    .pre {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+
+    .addBtn {
+        width: 272px;
+        height: 49px;
+    }
+
+    .addNewUser {
+        .info {
+            color: #858A97;
+            font-size: 16px;
+            line-height: 16px;
+
+        }
+    }
+
+    .block {
+        margin-top: 10px;
+        padding: 30px;
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0px 0px 30px 0px #00000014;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.78px;
+
+        &.edit {
+            display: grid;
+            grid-template-columns: 20px 1fr;
+            align-items: baseline;
+
+            .head,
+            .body {
+                border-bottom: none;
+            }
+
+            .zi {
+                margin-top: 5px;
+            }
+        }
+
+        .work {
+            font-weight: 400;
+            color: #858A97;
+        }
+        .num {
+            font-weight: 500;
+            color: #858A97;
+        }
+
+        .head {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #E2E8F4;
+
+            .cstInput {
+                width: 100%;
+            }
+
+            .buttons {
+                height: fit-content;
+            }
+        }
+
+        .body {
+            padding: 20px;
+            border-bottom: 1px solid #E2E8F4;
+            display: none;
+        }
+
+        .smbody {
+            display: none;
+        }
+
+        .input-wrap {
+            grid-template-rows: 40px;
+        }
+
+        .foot {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28.02px;
+            color: #858A97;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .glassBtn {
+                width: 140px;
+                height: 40px;
+            }
+
+            .cstBtn {
+                color: #1E63E9;
+                background: #EAF1FF;
+
+                svg {
+                    stroke: #1E63E9;
+                }
+            }
+
+            .editBtn {
+                width: 135px;
+                height: 40px;
+
+                &.success {
+                    color: #03B113;
+                }
+
+                &.danger {
+                    color: #FF0000;
+                }
+            }
+
+            .code {
+                font-size: 16px;
+                line-height: 22.78px;
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .dengei_block {
+        padding: 20px 25px 40px;
+        margin-top: 10px;
+    }
+
+    .dengei_block .title {
+        font-size: 28px;
+        line-height: 38.29px;
+    }
+
+    .dengei_block .turnir {
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .qatysushy {
+        padding: 20px 25px 40px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .dengei_block .title {
+        font-size: 24px;
+        line-height: 32.29px;
+    }
+
+    .dengei_block .turnir_info .d-f.a-c.gap-50 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .qatysushy .block .head .name {
+        display: none;
+    }
+
+    .qatysushy .block .body {
+        display: block;
+    }
+
+    .qatysushy .block .smbody {
+        display: block;
+    }
+
+
+
+    .qatysushy .block .nobody {
+        display: none;
+    }
+
+    .qatysushy .block {
+        padding: 0;
+    }
+
+    .qatysushy .block .head {
+        background: #F5F6F8;
+        box-shadow: 0px 3px 6px 0px #0000001A;
+
+        padding: 15px 20px;
+    }
+
+    .qatysushy .block .foot {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .qatysushy .block .num {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #172856;
+    }
+
+    .qatysushy .block.edit {
+        grid-template-columns: 1fr;
+    }
+
+    .qatysushy .block.edit {
+
+        .num,
+        .head {
+            display: none;
+        }
+
+        .grid-2,
+        .grid-3 {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .form-input,
+        .input-wrap {
+            padding: 0 20px;
+        }
+
+        .btn-group .myBtn {
+            max-height: none !important;
+        }
+    }
+
+    .qatysushy .block.edit .zi {
+        margin-top: 0px;
+    }
+
+    .addNewUser {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .dengei_block {
+        padding: 15px 20px 60px;
+        margin-top: 0px;
+    }
+
+    .qatysushy .block {
+        font-size: 16px;
+        line-height: 22.78px;
+    }
+
+    .qatysushy .block .work {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #858A97;
+    }
+
+    .qatysushy .block .foot {
+        font-size: 16px;
+        line-height: 24.02px;
+    }
+
+    .mb {
+        padding: 0;
+
+        .content {
+            width: 100vw;
+        }
+    }
+
+    .content {
+        margin-top: 0;
+    }
+}
+
+@media all and (max-width: 445px) {
+    .dengei_block {
+        padding: 15px 10px 60px;
+    }
+
+    .dengei_block .title {
+        font-size: 20px;
+        line-height: 28.29px;
+    }
+
+    .dengei_block .turnir {
+        margin-top: 20px;
+    }
+
+    .qatysushy {
+        padding: 50px 10px 60px;
+    }
+}
